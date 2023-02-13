@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+    // get all the links
+    const anchorLinks = Array.from(document.querySelectorAll('a'))
+
+
+    // add stuff to the link to make it open up a new tab
+
+    anchorLinks.forEach(anchorItem => {
+    anchorItem.target="_blank";
+    })
+
+    // click on the links
+
+    anchorLinks.forEach(anchorItem => {
+    anchorItem.click();
+    })
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
